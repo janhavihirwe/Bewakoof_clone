@@ -4,9 +4,13 @@ const userRoute=require("./routes/user.route")
 const productRoute=require("./routes/product.route")
 const sliderRoute=require("./routes/slider.route")
 require("dotenv").config()
+const cors=require("cors")
 
 const app=express()
 app.use(express.json())
+app.use(cors({
+    origin:"*"
+}))
 app.use("/user",userRoute)
 app.use("/product",productRoute)
 app.use("/slider",sliderRoute)
