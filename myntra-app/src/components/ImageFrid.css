@@ -1,0 +1,36 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 10px;
+  }
+  .text{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .image-item {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

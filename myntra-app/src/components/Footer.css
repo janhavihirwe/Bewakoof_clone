@@ -1,0 +1,95 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+  width: 10%;
+  margin-left: 205px;
+}
+.footer-content{
+  background-color: #181818;
+  color: white;
+  padding:60px 20px 0px 20px;
+}
+.first-footer{
+  margin-left:210px;
+  margin-right: 210px;
+  margin-top: 10px;
+}
+.heading{
+  color: #c3a345;
+}
+.footer-searches{
+    display: flex;
+    margin-left:210px;
+    margin-right: 210px;
+    margin-top: 20px;
+}
+.footer-container{
+    display: flex;
+    gap:40px
+}
+.footer-icon{
+  font-size: 1.5rem; 
+  margin-right: 12px; 
+  color: white;
+}
+.footer-heading{
+    font-weight: bold;
+}
+.footer-link:hover{
+    text-decoration: none;
+}
+.play-store-badge{
+    width:30%;
+}
+.app-store-badge{
+    width: 140px;
+}
+.footer-bottom{
+    margin-left: 210px;
+    margin-right: 210px;
+    margin-top: 20px;
+}
+@media (max-width: 992px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      width: 100%;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-bottom div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-container {
+      padding: 0;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-bottom div {
+      margin-bottom: 10px;
+    }
+  
+    .footer-link {
+      margin-bottom: 8px;
+    }
+  
+    .footer-icons {
+      justify-content: center;
+    }
+  }
